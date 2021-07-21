@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+body
+{
+  background-color: #C9C9C9;
+  margin: 0;
+  padding: 0;
+}
+/* Styling for the header */
+.header
+{
+  background-color: #9BFCD7;
+  padding: 10px 0 0 0;
+  overflow: hidden;
+  max-height: 60px;
+  margin-bottom: 50px;
+}
+/* Styling for h2 */
+h2
+{
+  width: auto;
+  height: 30px;
+  text-align: center;
+  margin: 10px auto 15px auto;
+  font-family: 'Caveat', cursive;
+}
+/* Styling for img inside the header */
+.header img
+{
+  background-position: center center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  bottom: 45px;
+  left: 630px;
+}
+/* Styles for buttons */
+#filterBooksBtn
+{
+  text-align: center;
+
+}
+button
+{
+  color: white;
+  background-color: #6D6E6C;
+  font-family: 'Caveat', cursive;
+  font-size: 100%;
+  border-radius: 15px;
+  padding: 5px;
+}
+button:hover, button.active
+{
+  background-color: #43BCF4;
+  cursor: pointer;
+}
+/* Styles for the image gallery */
+#gallery
+{
+  text-align: center;
+  margin: 0 auto;
+  max-width: 1300px;
+  overflow: hidden;
+  display: block;
+}
+#gallery img
+{
+  width: auto;
+  height: auto;
+  margin: 10px;
+  bottom: 0;
+  left: 0;
+  border-radius: 5px;
+}
+/* Responsive Styles*/
+/* Small Phones */
+@media only screen and (min-width: 320px) and (max-width: 374px)
+{
+  .container .header
+  {
+    width: 100%;
+    min-width: 374px;
+  }
+  .header img
+  {
+    left: 15px;
+  }
+}
+
+/* Medium Phones */
+@media only screen and (min-width: 375px) and (max-width: 424px)
+{
+  .container
+  {
+    overflow: hidden;
+    width: 100%;
+    min-width: 425px;
+
+  }
+  .header img
+  {
+    left: 45px;
+  }
+}
+/* Large Phones */
+@media only screen and (min-width: 425px) and (max-width: 767px)
+{
+  .container
+  {
+    overflow: hidden;
+    width: 100%;
+    min-width: 768px;
+
+  }
+  .header img
+  {
+    left: 220px;
+  }
+}
+/* Tablets */
+@media only screen and (min-width: 768px) and (max-width: 1024px)
+{
+  .container
+  {
+    overflow: hidden;
+    width: 100%;
+    min-width: 1025px;
+  }
+  .header img
+  {
+    left: 350px;
+  }
+}
+/* 4k Monitors */
+@media only screen and (min-width: 2560px)
+{
+  .header img
+  {
+    left: 1110px;
+  }
+}
